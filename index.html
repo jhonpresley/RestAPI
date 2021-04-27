@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      table.darkTable {
+        font-family: "Arial Black", Gadget, sans-serif;
+        border: 2px solid #000000;
+        background-color: #e71b1b;
+        width: 100%;
+        height: 200px;
+        text-align: left;
+        border-collapse: collapse;
+      }
+      table.darkTable td,
+      table.darkTable th {
+        border: 1px solid #4a4a4a;
+        padding: 3px 2px;
+      }
+      table.darkTable tbody td {
+        font-size: 13px;
+        color: #e6e6e6;
+      }
+      /* table.darkTable tr:nth-child(even) {
+        background: #888888;
+      } */
+      table.darkTable thead {
+        background: #000000;
+        border-bottom: 3px solid #000000;
+      }
+      table.darkTable thead th {
+        font-size: 15px;
+        font-weight: bold;
+        color: #e6e6e6;
+        text-align: center;
+        border-left: 2px solid #4a4a4a;
+      }
+      table.darkTable thead th:first-child {
+        border-left: none;
+      }
+
+      table.darkTable tfoot {
+        font-size: 12px;
+        font-weight: bold;
+        color: #e6e6e6;
+        background: #000000;
+        background: -moz-linear-gradient(
+          top,
+          #404040 0%,
+          #191919 66%,
+          #000000 100%
+        );
+        background: -webkit-linear-gradient(
+          top,
+          #404040 0%,
+          #191919 66%,
+          #000000 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          #404040 0%,
+          #191919 66%,
+          #000000 100%
+        );
+        border-top: 1px solid #4a4a4a;
+      }
+      table.darkTable tfoot td {
+        font-size: 12px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <table class="darkTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>MODULO</th>
+          <th>HTTP</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>GET</td>
+          <td>
+            O método GET solicita a representação de um recurso específico.
+            Requisições utilizando o método GET devem retornar apenas dados.
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>POST</td>
+          <td>
+            O método POST é utilizado para submeter uma entidade a um recurso
+            específico, frequentemente causando uma mudança no estado do recurso
+            ou efeitos colaterais no servidor.
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>PUT</td>
+          <td>
+            O método PUT substitui todas as atuais representações do recurso de
+            destino pela carga de dados da requisição.
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>PATCH</td>
+          <td>
+            O método PATCH é utilizado para aplicar modificações parciais em um
+            recurso.
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>DELETE</td>
+          <td>O método DELETE remove um recurso específico.</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
